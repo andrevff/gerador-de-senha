@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <main>
+        <section class="header">
+            <h1 class="title">Gerador de Senha</h1>
+            <p class="subtitle">Utilize o nosso gerador online para criar uma senha forte e segura.</p>
+        </section>
+
+        <section class="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password">
+                </div>
+                <div class="actions">
+                    <button id="copy-1">
+                        <img src="assets/icons/clipboard.svg" alt="">
+                    </button>
+                    <button id="reload">
+                        <img src="assets/icons/reload.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="security-indicator">
+                <div id="security-indicator-bar" class="bar"></div>
+            </div>
+        </section>
+
+        <section class="box customize">
+            <h3 class="title">Personalizar</h3>
+            <div class="actions">
+                <div class="password-length">
+                    <p>Tamannho: <span id="password-length-text">6</span></p>
+                    <input type="range" name="password-length" id="password-length" class="slider" value="6" min="4" max="64">
+                </div>
+                <div class="config">
+                    <label class="checkbox-container">
+                        <span class="text">Maiúsculas</span>
+                        <input type="checkbox" id="uppercase-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="text">Números</span>
+                        <input type="checkbox" id="number-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox-container">
+                        <span class="text">Símbolos</span>
+                        <input type="checkbox" id="symbol-check" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <div class="submit">
+            <button id="copy-2">Copiar Senha</button>
+        </div>
+    </main>
+
+    <footer class="box">
+        <p>Desenvolvido por André Ferreira | 2022</p>
+        <div class="icons">
+            <a href="https://github.com/andrevff" target="_blank">
+                <img class="github" src="assets/icons/github.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/andr%C3%A9-victor-ferreira-c%C3%A2ndido/" target="_blank">
+                <img class="linkedin" src="assets/icons/linkedin.svg" alt="">
+            </a> 
+        </div> 
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
